@@ -1,0 +1,3 @@
+if using mysql --> include schema.sql
+
+npm init -y
