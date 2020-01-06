@@ -53,7 +53,7 @@
             answer_div.id = "ans_cont";
             let number = 1;
             answers.forEach((answer) => {
-                var ans = document.createElement("span");
+                var ans = document.createElement("div");
                 ans.id = "ans" + number;
                 ans.append(answer);
                 answer_div.append(ans);
@@ -62,7 +62,11 @@
             var container = document.getElementById("surveyContainer");
             container.append(question_div, answer_div, space);
         })
-
+        var container = document.getElementById("surveyContainer");
+        var done_btn = document.createElement("button");
+        done_btn.id = "done_btn";
+        done_btn.append("Find Friend!");
+        container.append(done_btn);
     };
 
     displayQuestions_and_Answers();

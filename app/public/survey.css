@@ -1,4 +1,14 @@
-.choice{
-    font-size: 8px;
-    padding: 8px;
+#ans1, #ans2, #ans3, #ans4, #ans5, #ans6{
+    border: .5px solid lightgray;
+    padding: 5px;
+    margin: 5px;
+    color: yellow;
+    background-color: royalblue;
+    display: inline-block;
+}
+
+#ques{
+    margin: 10px;
+    color: tomato;
+    font-weight: bold;
 }
