@@ -12,13 +12,7 @@
     <div class="container">
         <h1 class="title">Friends Survey</h1>
 
-        <div class="surveyContainer">
-            <div class="question"></div>
-            <div class="answerChoices">
-                <span id="choice_one" class="choice"></span><span id="choice_two" class="choice"></span><span
-                    id="choice_three" class="choice"></span><span id="choice_four" class="choice"></span><span
-                    id="choice_five" class="choice"></span><span id="choice_six" class="choice"></span>
-            </div>
+        <div id="surveyContainer">
         </div>
     </div>
 
@@ -49,6 +43,25 @@
     ];
 
     function displayQuestions_and_Answers() {
+        questions.forEach((question) => {
+            var question_div = document.createElement("div");
+            question_div.id = "ques";
+            var space = document.createElement("br");
+            var q = question;
+            question_div.append(q);
+            var answer_div = document.createElement("div");
+            answer_div.id = "ans_cont";
+            let number = 1;
+            answers.forEach((answer) => {
+                var ans = document.createElement("span");
+                ans.id = "ans" + number;
+                ans.append(answer);
+                answer_div.append(ans);
+                number++;
+            })
+            var container = document.getElementById("surveyContainer");
+            container.append(question_div, answer_div, space);
+        })
 
     };
 
