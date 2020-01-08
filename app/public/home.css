@@ -2,13 +2,14 @@
     border: .5px solid black;
     border-radius: 8px;
     padding: 10px;
-    background-color: lightblue;
+    background-color: grey;
 }
 
 .survey_btn{
-    border: .5px solid black;
+    border: .5px solid white;
     border-radius: 8px;
-    background-color: gray;
+    background-color: black;
+    color: white;
     padding: 20px;
     font-size: 20px;
     font-weight: bold;
@@ -19,7 +20,7 @@
 }
 
 body{
-    background: rgb(250, 233, 233);
+    background: rgb(192, 189, 189);
 }
 
 h1{
