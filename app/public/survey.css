@@ -45,3 +45,23 @@ body{
     border-color: black;
     cursor: pointer;
 }
+
+.input_name, .input_img{
+    min-width: 50%;
+}
+
+.input_info{
+    border-bottom: 1px solid black;
+    margin-bottom: 15px;
+}
+
+.intro_text{
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+}
+
+.title{
+    border-bottom: 1px dashed black;
+    max-width: fit-content;
+    padding: 5px;
+}
